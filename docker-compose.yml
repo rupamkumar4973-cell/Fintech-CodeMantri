@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:latest
+    container_name: smartloan_mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+    networks:
+      - smartloan_network
+
+  backend:
+    build: ./backend
+    container_name: smartloan_backend
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - MONGODB_URI=mongodb://mongodb:27017/smartloan
+      - JWT_SECRET=smartloan_jwt_secret_key_2026_secure_signing
+      - JWT_REFRESH_SECRET=smartloan_jwt_refresh_secret_key_2026_secure_signing
+      - CLOUDINARY_CLOUD_NAME=mock_cloud
+      - CLOUDINARY_API_KEY=mock_key
+      - CLOUDINARY_API_SECRET=mock_secret
+      - FORCE_MOCK_DB=false
+    depends_on:
+      - mongodb
+    volumes:
+      - ./backend/uploads:/app/uploads
+    networks:
+      - smartloan_network
+
+  frontend:
+    build: ./frontend
+    container_name: smartloan_frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    networks:
+      - smartloan_network
+
+volumes:
+  mongo_data:
+
+networks:
+  smartloan_network:
+    driver: bridge
