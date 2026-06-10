@@ -1,4 +1,4 @@
-# SmartLoan AI 🏦🤖
+# CodeMantri 🏦🤖
 > Production-Ready MERN Stack FinTech Platform with AI-Driven Loan Eligibility & Verification
 
 SmartLoan AI is a comprehensive modern FinTech platform designed to streamline loan applications, automate credit risk assessment, verify identity through OCR, and provide AI-powered personalized loan recommendations. It features a complete React + TypeScript frontend and a Node.js/Express backend, with a dual database mechanism supporting both local MongoDB and a mock JSON database fallback.
@@ -130,5 +130,5 @@ npm run dev
 ## 🧑‍💻 Developer
 
 - **Name:** Rupam Bhargov
-- **LinkedIn:** [Add your LinkedIn profile link here](https://www.linkedin.com/in/your-profile-url)
+- **LinkedIn:** [Linkdn](linkedin.com/in/rupam-bhargov-777380294)
 - **GitHub Repository:** [Fintech-CodeMantri](https://github.com/rupamkumar4973-cell/Fintech-CodeMantri)
