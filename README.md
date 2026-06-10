@@ -130,5 +130,5 @@ npm run dev
 ## 🧑‍💻 Developer
 
 - **Name:** Rupam Bhargov
-- **LinkedIn:** [Linkdn](linkedin.com/in/rupam-bhargov-777380294)
+- **LinkedIn:** [Linkdn](https://www.linkedin.com/in/rupam-bhargov-777380294?utm_source=share_via&utm_content=profile&utm_medium=member_android)
 - **GitHub Repository:** [Fintech-CodeMantri](https://github.com/rupamkumar4973-cell/Fintech-CodeMantri)
